@@ -8,3 +8,7 @@ function isEven(number){
     }
 }
 
+const myNumber = isEven(202);
+console.log(myNumber)
+const myNumberODD = isEven(207);
+console.log(myNumberODD)
