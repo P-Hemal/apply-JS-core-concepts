@@ -13,14 +13,20 @@
 // getSumOfAnArray(myNumbers);
 
 function getOddNumbersOfAnArray(numbers){
+    const oddNumbers = [];
     for(let i = 0; i < numbers.length; i++){
-    const index = i;
-    const element = numbers[index];
-    if(element % 2 !== 0){
-        console.log(index, element);
+        const index = i;
+        const element = numbers[index];
+        if(element % 2 === 0){
+            console.log(index, element);
+            oddNumbers.push(element);
+        }
     }
-}
+    return oddNumbers;
 }
 
+
 const myNumbers =[12, 23, 37, 44, 52, 71, 85, 98];
+const oddNumbers = getOddNumbersOfAnArray(myNumbers);
+console.log(oddNumbers);
 getOddNumbersOfAnArray(myNumbers);
